@@ -1,0 +1,46 @@
+.how-to-use {
+  max-width: 1024px;
+  font-family: sans-serif;
+  color: #0B1F47;
+}
+
+.how-to-use__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.how-to-use__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.how-to-use__btn {
+  border: solid #0B1F47;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  background-color: transparent;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.how-to-use--open .how-to-use__btn {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.how-to-use__down {
+  height: 0;
+  overflow: hidden;
+}
+
+.how-to-use__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
