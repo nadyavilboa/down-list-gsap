@@ -7,13 +7,15 @@ if (container && btnListOpen) {
     
     if (container.classList.contains('how-to-use--open')) {
       gsap.to(".how-to-use__down", {
-        height: auto,
+        duration: 0.4,
+        height: 'auto',
       })
       
       return 0;
     }
     
       gsap.to(".how-to-use__down", {
+        duration: 0.4,
         height: 0,
       })
   }
